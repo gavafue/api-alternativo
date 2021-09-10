@@ -3,7 +3,7 @@ var showTeam = function (array, lugar) {
     for (let i = 0; i < array.length; i++) {
         let element=array[i];
         contenido +=
-            `<div class="teamcontainer"><button class="submit horizontal">Más información</button><img src="${element.img}" class="teamlogo"></img>
+            `<div class="teamcontainer"><button class="submit horizontal" onclick="moreteaminfo(${element.id})">Más información</button><img src="${element.img}" class="teamlogo"></img>
         <p><i>Equipo:</i> ${element.namecomplete}</p>
         <p><i>Jugadores:</i> ${element.jugadores}</p>
         <p><i>Habilitados:</i> ${element.habilitados}</p>
@@ -13,6 +13,14 @@ var showTeam = function (array, lugar) {
     };
 document.getElementById(lugar).innerHTML = contenido;
 }
+
+function moreteaminfo(n) {
+
+    localStorage.setItem("team", n)
+    window.location = "info-detallada.html"
+}
+
+
 var arrayMayoresFem
 document.addEventListener("DOMContentLoaded", function () {
     getJSONData(MAYORES_FEMENINO).then(function (resultObj) {
@@ -22,10 +30,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    function moreteaminfo(n) {
-
-        localStorage.setItem("team", n)
-        window.location = "info-detallada.html"
-    }
 
 })
