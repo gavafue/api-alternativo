@@ -1,4 +1,5 @@
-{
+[
+  {
   "pontevedres": {
     "id": "1",
     "namecomplete": "Centro Pontevedrés Social y Deportivo de Montevideo Uruguay",
@@ -35,4 +36,6 @@
     "diferenciaGoles": "-12",
     "img": "img/4.jpg"
   }
+
 }
+]
