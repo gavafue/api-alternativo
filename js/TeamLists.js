@@ -12,11 +12,16 @@ var showTeam = function (array, lugar) {
     });
        document.getElementById(lugar).innerHTML = contenido;
 }
-
+var arrayMayoresFem 
 document.addEventListener("DOMContentLoaded", function () {
     getJSONData(MAYORES_FEMENINO).then(function (resultObj) {
         if (resultObj.status === "ok") {
             showTeam(resultObj.data, "mayoresFemenino");
+            arrayMayoresFem=resultObj.data
         }
+    });
+
+    document.getElementsByClassName("horizontal").addEventListener("click",function(){
+window.location= "info-detallada.html";
     });
 })
