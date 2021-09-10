@@ -1,40 +1,40 @@
 {
     "MayoresFemenino": {
-      "Pontevedres": {
+      "pontevedres": {
         "id": "1",
-        "NameComplete": "Centro Pontevedrés Social y Deportivo de Montevideo Uruguay",
-        "Jugadores": 17,
-        "Habilitados": 15,
-        "Sanciones": 1,
-        "DiferenciaGoles": "+15",
-        "imgSrc": "img/1.jpg"
+        "namecomplete": "Centro Pontevedrés Social y Deportivo de Montevideo Uruguay",
+        "jugadores": 17,
+        "habilitados": 15,
+        "sanciones": 1,
+        "diferenciaGoles": "+15",
+        "img": "img/1.jpg"
       },
       "Bohemios": {
         "id": "2",
-        "NameComplete": "Club Atlético Bohemios",
-        "Jugadores": 15,
-        "Habilitados": 14,
-        "Sanciones": 0,
-        "DiferenciaGoles": "-3",
-        "imgSrc": "img/2.jpg"
+        "namecomplete": "Club Atlético Bohemios",
+        "jugadores": 15,
+        "habilitados": 14,
+        "sanciones": 0,
+        "diferenciaGoles": "-3",
+        "img": "img/2.jpg"
       },
       "Scuola": {
         "id": "3",
-        "NameComplete": "Scuola Italiana di Montevideo",
-        "Jugadores": 18,
-        "Habilitados": 18,
-        "Sanciones": 2,
-        "DiferenciaGoles": "+2",
-        "imgSrc": "img/3.jpg"
+        "namecomplete": "Scuola Italiana di Montevideo",
+        "jugadores": 18,
+        "habilitados": 18,
+        "sanciones": 2,
+        "diferenciaGoles": "+2",
+        "img": "img/3.jpg"
       },
       "Goes": {
         "id": "4",
-        "NameComplete": "Club Atlético Goes",
-        "Jugadores": 13,
-        "Habilitados": 11,
-        "Sanciones": 0,
-        "DiferenciaGoles": "-12",
-        "imgSrc": "img/4.jpg"
+        "namecomplete": "Club Atlético Goes",
+        "jugadores": 13,
+        "habilitados": 11,
+        "sanciones": 0,
+        "diferenciaGoles": "-12",
+        "img": "img/4.jpg"
       }
     }
   }
