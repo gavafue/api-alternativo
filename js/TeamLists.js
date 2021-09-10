@@ -15,7 +15,7 @@ var showTeam = function(array,lugar){
 document.addEventListener("DOMLoadedComplete",function(){
     getJSONData(MAYORES_FEMENINO).then(function (arrayMayFem) {
         if (arrayMayFem.status === "ok") {
-                  showLibros(arrayMayFem.data,"MayoresFemenino");
+                  showTeam(arrayMayFem.data,"MayoresFemenino");
         }
     });
 })
