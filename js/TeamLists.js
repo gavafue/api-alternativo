@@ -1,6 +1,6 @@
 var showTeam = function (array, lugar) {
     contenido = "";
-    for (let equipo in array) {
+    for (let equipo of array) {
         contenido += 'Equipo: ' + equipo.namecomplete + '<br>';
         contenido += 'Jugadores: ' + equipo.jugadores + '<br>';
         contenido += 'Habilitados: ' + equipo.habilitados + '<br>';
