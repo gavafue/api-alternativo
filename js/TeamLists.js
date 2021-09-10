@@ -1,13 +1,14 @@
 var showTeam = function (array, lugar) {
     contenido = "";
     array.forEach(element => {
-        contenido += 'Equipo: ' + element.namecomplete + '<br>';
-        contenido += 'Jugadores: ' + element.jugadores + '<br>';
-        contenido += 'Habilitados: ' + element.habilitados + '<br>';
-        contenido += 'Sanciones: ' + element.sanciones + '<br>';
-        contenido += 'Diferencia de Goles: ' + element.diferenciaGoles + '<br>';
-        contenido += `<img src="${element.img}" width="250px"></img>`;
-        contenido += '<br><hr><br>'
+        contenido += 
+        `<div class="teamcontainer"><button class="submit horizontal">Más información</button><img src="${element.img}" class="teamlogo"></img>
+        <p><i>Equipo:</i> ${element.namecomplete}</p>
+        <p><i>Jugadores:</i> ${element.jugadores}</p>
+        <p><i>Habilitados:</i> ${element.habilitados}</p>
+        <p><i>Sanciones:</i> ${element.sanciones}</p>
+        <p><i>Diferencia de Goles:</i> ${element.diferenciaGoles}</p>
+    </div><hr>`
     });
        document.getElementById(lugar).innerHTML = contenido;
 }

@@ -1,0 +1,41 @@
+img.teamlogo {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px 0 0;
+}
+.teamcontainer {
+    width: 80%;
+    margin: 0 auto;
+    background: #e2e2e2;
+    height: 200px;
+}
+body {
+    background: radial-gradient(#653d84, #332042);
+}
+h1 {
+    text-align: center;
+    color: lightyellow;
+}
+
+.submit {
+    border: none;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+    float: right;
+    padding: 10px;
+    background: #000000;
+    color: #fff;
+    font-weight: bold;
+    -webkit-box-shadow: 0px 9px 15px -11px rgb(88 54 114);
+    -moz-box-shadow: 0px 9px 15px -11px rgba(88,54,114,1);
+    box-shadow: 0px 9px 15px -11px rgb(88 54 114);
+}
+button.submit.horizontal {
+    transform: rotate(45deg);
+    margin: 10px -45px 0px 0px;
+}
+.submit:hover{
+    cursor: pointer;
+}

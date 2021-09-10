@@ -22,7 +22,10 @@ var getJSONData = function (url) {
       });
   }
 
+function redireccionar(link){
+    window.location=link;
 
+}
 document.addEventListener("DOMContentLoaded",function(){
    
 
