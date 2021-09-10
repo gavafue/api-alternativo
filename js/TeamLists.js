@@ -12,7 +12,7 @@ var showTeam = function(array,lugar){
     document.getElementById(lugar).innerHTML=contenido;
 }
 
-document.addEventListener("DOMLoadedComplete",function(){
+document.addEventListener("DOMContentLoaded",function(){
     getJSONData(MAYORES_FEMENINO).then(function (resultObj) {
         if (resultObj.status === "ok") {
                   showTeam(resultObj.data,"mayoresFemenino");
