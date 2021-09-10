@@ -13,9 +13,9 @@ var showTeam = function(array,lugar){
 }
 
 document.addEventListener("DOMLoadedComplete",function(){
-    getJSONData(MAYORES_FEMENINO).then(function (arrayMayFem) {
-        if (arrayMayFem.status === "ok") {
-                  showTeam(arrayMayFem.data,"MayoresFemenino");
+    getJSONData(MAYORES_FEMENINO).then(function (resultObj) {
+        if (resultObj.status === "ok") {
+                  showTeam(resultObj.data,"mayoresFemenino");
         }
     });
 })
