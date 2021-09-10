@@ -1,15 +1,15 @@
 var showTeam = function (array, lugar) {
     contenido = "";
-    for (let equipo of array) {
-        contenido += 'Equipo: ' + equipo.namecomplete + '<br>';
-        contenido += 'Jugadores: ' + equipo.jugadores + '<br>';
-        contenido += 'Habilitados: ' + equipo.habilitados + '<br>';
-        contenido += 'Sanciones: ' + equipo.sanciones + '<br>';
-        contenido += 'Diferencia de Goles: ' + equipo.diferenciaGoles + '<br>';
-        contenido += `<img src="${equipo.img}" width="250px"></img>"`;
+    array.forEach(element => {
+        contenido += 'Equipo: ' + element.namecomplete + '<br>';
+        contenido += 'Jugadores: ' + element.jugadores + '<br>';
+        contenido += 'Habilitados: ' + element.habilitados + '<br>';
+        contenido += 'Sanciones: ' + element.sanciones + '<br>';
+        contenido += 'Diferencia de Goles: ' + element.diferenciaGoles + '<br>';
+        contenido += `<img src="${element.img}" width="250px"></img>`;
         contenido += '<br><hr><br>'
-    }
-    document.getElementById(lugar).innerHTML = contenido;
+    });
+       document.getElementById(lugar).innerHTML = contenido;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
