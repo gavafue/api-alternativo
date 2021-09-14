@@ -1,8 +1,10 @@
 body {
-  background: radial-gradient(#653d84, #332042);
+  margin: 0;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background:radial-gradient(#653d84, #332042);
 }
 
 .conexion {
