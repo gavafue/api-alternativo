@@ -10,6 +10,7 @@ body{
     display: flex;
     align-content: center;
     justify-content: center;
+    background: radial-gradient(#653d84, #332042);
 }
 
 .categoria {
@@ -19,4 +20,14 @@ body{
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+.categoria {
+    width: 45%;
+    height: 100px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background: #e2e2e2;
+    margin: 1px;
 }
