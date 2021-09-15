@@ -7,30 +7,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indice</title>
     <link href="css/indice.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-    <nav>
-        <ul>
-          <li onclick="redireccionar('mayoresfem.html')">
-            liga mayor femenina
-            <span></span><span></span><span></span><span></span>
-          </li>
-          <li>
-            liga mayor masculina
-            <span></span><span></span><span></span><span></span>
-          </li>
-          <li>
-            sub 23 femenino
-            <span></span><span></span><span></span><span></span>
-          </li>
-          <li>
-            sub 23 masculino
-            <span></span><span></span><span></span><span></span>
-          </li>
-        </ul>
-      </nav>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"><img class="d-inline-block " src="img/logofuh.png"
+                alt="Logo Federación Uruguaya de Handball" width="50"> Smart Referee</a>
 
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Ligas</a></li>
+                <li><a href="#" class="nav-link">Arbitros</a></li>
+                <li><a href="#" class="nav-link">Tablas y posiciones 3</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Contenido-->
+    <div class="container bg-light.bg-gradient border">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <img src="img/mayfem.jpg" style="max-height:15rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Liga Mayor Femenina</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="mayoresfem.html" class="btn btn-dark">Ver listado de equipos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <img src="img/mayoresmasc.jpeg" style="max-height:15rem;" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5 class="card-title">Liga Mayor Masculina</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="#" class="btn btn-dark ">Ver listado de equipos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <img src="img/sub23fem.jpg" style="max-height:15rem;" class="card-img-top" max-heigth="15rem"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Liga Sub 23 Femenina</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="#" class="btn btn-dark ">Ver listado de equipos</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 25rem;">
+                        <img src="img/sub23masc.jfif" style="max-height:15rem;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Liga Sub 23 Masculina</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="#" class="btn btn-dark ">Ver listado de equipos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <div id="footer" class="p-5">
+        <div class="container w-50 pt-5">
+            <div class="row justify-content-md-center">
+                <div class="col text-center">
+                    <a href="#">
+                        <button class="btn btn-lg rounded-pill btn-warning w-10 p-3 shadpw-sm">Prueba</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
