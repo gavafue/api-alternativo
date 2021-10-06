@@ -3,16 +3,27 @@ var showTeam = function (array, lugar) {
     for (let i = 0; i < array.length; i++) {
         let element=array[i];
         contenido +=
-            `<div class="container bg-light.bg-gradient border">
-            <div class="row" onclick="moreteaminfo(${element.id})">
-           <div class="col-4"><img src="${element.img}" class="img-thumbnail"></img></div>
-        <div class="col"><p><i>Equipo:</i> ${element.namecomplete}</p>
-        <p><i>Jugadores:</i> ${element.jugadores}</p>
-        <p><i>Habilitados:</i> ${element.habilitados}</p>
-        <p><i>Sanciones:</i> ${element.sanciones}</p>
-        <p><i>Diferencia de Goles:</i> ${element.diferenciaGoles}</p>
-        </div></div>
-    </div><hr>`
+            `  <div class="row bg-light border" style="cursor:pointer;" onclick="moreteaminfo(${element.id})">
+            <div class="col-3 img-hover-zoom img-hover-zoom--brightness"><img src="${element.img}"
+                    class="img-thumbnail container-fluid" style="max-height: 15rem;"></img></div>
+            <div class="col">
+                <div class="row " style="text-align:center;"><b>${element.namecomplete}</b></div>
+                <div class="row ">
+                    <div class="col-3 ">Jugadores:</div>
+                    <div class="col"> ${element.jugadores}</div>
+                </div>
+                <div class="row">
+                    <div class="col-3">Habilitados:</div>
+                    <div class="col"> ${element.habilitados}</div>
+                </div>
+                <div class="row">
+                   <div class="col-3">Sanciones:</div><div class="col">${element.sanciones}</div>
+                </div>
+                <div class="row">
+                   <div class="col-3">Diferencia de Goles:</div><div class="col"> ${element.diferenciaGoles}</div>
+                </div>
+            </div>
+        </div>`
     };
 document.getElementById(lugar).innerHTML = contenido;
 }

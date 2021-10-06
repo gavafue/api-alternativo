@@ -1,14 +1,11 @@
-function teaminfo(array) {
-    let contenido = 
-    `
-    <div class="container bg-light">
+<div class="container">
     <div class="row border">
-        <h2 class="text-center"> ${array[(localStorage.getItem("team")) - 1].namecomplete}</h2>
+        <h2> ${array[(localStorage.getItem("team")) - 1].namecomplete}</h2>
     </div>
 
     <div class="row">
-        <div class="col-7 border">
-            <div class="row text-center">
+        <div class="col-8">
+            <div class="row tex-align-center">
                 <h3>Resumen</h3>
             </div>
             <div class="row">
@@ -28,17 +25,8 @@ function teaminfo(array) {
                 <div class="col">${array[(localStorage.getItem("team")) - 1].diferenciaGoles}</div>
             </div>
         </div>
-        <div class="col border">
-            <img src="${array[(localStorage.getItem("team")) - 1].img}" style="max-height:20rem;" class="justify-content"></img></div>
+        <div class="col">
+            <img src="${array[(localStorage.getItem(" team")) - 1].img}" class="teamlogo"></img></div>
     </div>
 
-</div>`;
-document.getElementById("title").innerHTML=` ${array[(localStorage.getItem("team")) - 1].namecomplete}`;
-document.getElementById("teaminfoshowed").innerHTML = contenido;
-
-}
-document.addEventListener("DOMContentLoaded", function () {
-    getJSONData(MAYORES_FEMENINO).then(function (result) {
-        teaminfo(result.data)
-    });
-})
+</div>
