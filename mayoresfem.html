@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipos Liga Mayor Femenina</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body><div class="listado">
+<body>   <!--NAVBAR-->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"><img class="d-inline-block " src="img/logofuh.png"
+                alt="Logo Federación Uruguaya de Handball" width="50"> Smart Referee</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li><a href="#" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Ligas</a></li>
+                <li><a href="#" class="nav-link">Arbitros</a></li>
+                <li><a href="#" class="nav-link">Tablas y posiciones 3</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Contenido--><div class="listado">
     <h1>Equipos de Liga Mayor Femenina</h1>
     <div id="mayoresFemenino"></div></div>
    </body>
