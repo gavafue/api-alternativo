@@ -29,7 +29,7 @@ function teaminfo(array) {
             </div>
         </div>
         <div class="col border">
-            <img src="${array[(localStorage.getItem("team")) - 1].img}" style="max-height:20rem;" class="justify-content"></img></div>
+            <img src="${array[(localStorage.getItem("team")) - 1].img}" class="container-xl" style="max-width: 20rem;max-height:20rem;"></img></div>
     </div>
 
 </div>`;

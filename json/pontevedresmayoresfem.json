@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Agustina Gonzalez",
+        "rol":"player",
+        "punishment": "2",
+        "disqualification": "0",
+        "goals": "27",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "yes"
+      },
+      {
+        "name": "Federica Sosa",
+        "rol":"player",
+        "punishment": "4",
+        "disqualification": "0",
+        "goals": "12",
+        "healtdeadtime": "/12/2021",
+        "writedreport": "no"
+      },
+      {
+        "name": "Romina Velez",
+        "rol":"player",
+        "punishment": "2",
+        "disqualification": "0",
+        "goals": "27",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "no"
+      },
+      {
+        "name": "Guillermina Perez",
+        "rol":"player",
+        "punishment": "2",
+        "disqualification": "0",
+        "goals": "27",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "no"
+      },
+      {
+        "name": "Daphne Viera",
+        "rol":"player",
+        "punishment": "6",
+        "disqualification": "0",
+        "goals": "4",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "no"
+      },
+      {
+        "name": "Jimena Souto",
+        "rol":"player",
+        "punishment": "2",
+        "disqualification": "0",
+        "goals": "27",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "no"
+      },
+      {
+        "name": "Felipe Gonzalez",
+        "rol":"oficial",
+        "punishment": "2",
+        "disqualification": "0",
+        "goals": "27",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "no"
+      }
+      ,{
+        "name": "Fabian Fuentes",
+        "rol":"oficial",
+        "punishment": "2",
+        "disqualification": "0",
+        "goals": "0",
+        "healtdeadtime": "27/12/2021",
+        "writedreport": "no"
+      }
+]
