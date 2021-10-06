@@ -41,4 +41,22 @@ document.addEventListener("DOMContentLoaded", function () {
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
+  let counter=0
+
+    getJSONData(PONTEVEDRES_MAY_FEM).then(function (result) {
+        if(localStorage.getItem("team")==1){
+            result.data.forEach(element => {
+                document.getElementById("playerslist").innerHTML+=`  <tr>
+                <th scope="row">${counter + 1}</th>
+                <td>Sit</td>
+                <td>Amet</td>
+                <td>Consectetur</td>
+                <td>Consectetur</td>
+                <td>Consectetur</td>
+                <td>Consectetur</td>
+              </tr>`;
+            });
+           
+        }    
+        });
 })

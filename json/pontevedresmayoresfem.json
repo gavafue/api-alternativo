@@ -6,7 +6,8 @@
         "disqualification": "0",
         "goals": "27",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "yes"
+        "writedreport": "yes",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       },
       {
         "name": "Federica Sosa",
@@ -24,7 +25,8 @@
         "disqualification": "0",
         "goals": "27",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "no"
+        "writedreport": "no",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       },
       {
         "name": "Guillermina Perez",
@@ -33,7 +35,8 @@
         "disqualification": "0",
         "goals": "27",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "no"
+        "writedreport": "no",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       },
       {
         "name": "Daphne Viera",
@@ -42,7 +45,8 @@
         "disqualification": "0",
         "goals": "4",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "no"
+        "writedreport": "no",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       },
       {
         "name": "Jimena Souto",
@@ -51,7 +55,8 @@
         "disqualification": "0",
         "goals": "27",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "no"
+        "writedreport": "no",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       },
       {
         "name": "Felipe Gonzalez",
@@ -60,7 +65,8 @@
         "disqualification": "0",
         "goals": "27",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "no"
+        "writedreport": "no",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       }
       ,{
         "name": "Fabian Fuentes",
@@ -69,6 +75,7 @@
         "disqualification": "0",
         "goals": "0",
         "healtdeadtime": "27/12/2021",
-        "writedreport": "no"
+        "writedreport": "no",
+        "profileimg":"https://dummyimage.com/50x50/000/fff.png"
       }
 ]
