@@ -46,8 +46,9 @@ document.addEventListener("DOMContentLoaded", function () {
     getJSONData(PONTEVEDRES_MAY_FEM).then(function (result) {
         if(localStorage.getItem("team")==1){
             result.data.forEach(element => {
+                counter++;
                 document.getElementById("playerslist").innerHTML+=`  <tr>
-                <th scope="row">${counter + 1}</th>
+                <th scope="row">${counter}</th>
                 <td>Sit</td>
                 <td>Amet</td>
                 <td>Consectetur</td>
