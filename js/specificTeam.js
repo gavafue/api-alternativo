@@ -39,14 +39,10 @@ function teaminfo(array) {
     document.getElementById("teaminfoshowed").innerHTML = contenido;
 
 }
-function buscarinforme(player){
 
-}
 var listainformes
 document.addEventListener("DOMContentLoaded", function () {
-    getJSONData(INFORMES_MAY_FEM).then(function(result){
-        listainformes=result.data;
-    });
+  
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
@@ -59,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var buttonWD
                 if (element.writedreport == "yes") {
 
-                    buttonWD = `<span class="badge bg-warning text-dark" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="buscarinforme(${element.id})">Ver WD</span>`;
+                    buttonWD = `<span class="badge bg-warning text-dark" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>`;
 
                 } else {
                     buttonWD = " - ";
@@ -79,5 +75,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-  
+    getJSONData(INFORMES_MAY_FEM).then(function(result){
+        document.getElementById("exampleModalLabel").innerHTML= result.name;
+    });
 })
+
