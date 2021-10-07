@@ -15,7 +15,7 @@
         "punishment": "4",
         "disqualification": "0",
         "goals": "12",
-        "healtdeadtime": "/12/2021",
+        "healtdeadtime": "17/02/2022",
         "writedreport": "no"
       },
       {
@@ -42,7 +42,7 @@
         "name": "Daphne Viera",
         "rol":"player",
         "punishment": "6",
-        "disqualification": "0",
+        "disqualification": "2",
         "goals": "4",
         "healtdeadtime": "27/12/2021",
         "writedreport": "no",
@@ -62,7 +62,7 @@
         "name": "Felipe Gonzalez",
         "rol":"oficial",
         "punishment": "2",
-        "disqualification": "0",
+        "disqualification": "1",
         "goals": "27",
         "healtdeadtime": "27/12/2021",
         "writedreport": "no",
