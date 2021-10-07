@@ -4,8 +4,8 @@ var showTeam = function (array, lugar) {
         let element=array[i];
         contenido +=
             `  <div class="row bg-light border" style="cursor:pointer;" onclick="moreteaminfo(${element.id})">
-            <div class="col-3 img-hover-zoom img-hover-zoom--brightness"><img src="${element.img}"
-                    class="img-thumbnail container-fluid" style="max-height: 15rem;"></img></div>
+            <div class="col-2 img-hover-zoom img-hover-zoom--brightness"><img src="${element.img}"
+                    class="img-thumbnail container-fluid" style="max-height: 8rem;"></img></div>
             <div class="col">
                 <div class="row " style="text-align:center;"><b>${element.namecomplete}</b></div>
                 <div class="row ">
