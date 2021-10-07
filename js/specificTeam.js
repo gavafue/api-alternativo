@@ -1,5 +1,3 @@
-INFORMES_MAY_FEM = "https://gavafue.github.io/api-alternativo/json/informesfemMay.json"
-
 function teaminfo(array) {
     let contenido =
         `
@@ -55,7 +53,28 @@ document.addEventListener("DOMContentLoaded", function () {
                 var buttonWD
                 if (element.writedreport == "yes") {
 
-                    buttonWD = `<span class="badge bg-warning text-dark" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>`;
+                    buttonWD = `<span class="badge bg-warning text-dark" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>
+                    <!-- Popup Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <div class="row bg-light border" id="wdDescription"></div>
+       <div class="row"><div class="col bg-light border">Árbitros</div><div class="col bg-light border" id="wdReferee"></div></div>
+       <div class="row"><div class="col bg-light border">Recinto</div><div class="col bg-light border" id="wdCourt"></div></div>
+       <div class="row"><div class="col bg-light border">Fecha</div><div class="col bg-light border" id="wdDate"></div></div>
+       <div class="row"><div class="col bg-light border">Tiempo restante</div><div class="col bg-light border" id="wdEndtime"></div></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+ </div>`;
 
                 } else {
                     buttonWD = " - ";
@@ -75,8 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    getJSONData(INFORMES_MAY_FEM).then(function(result){
-        document.getElementById("exampleModalLabel").innerHTML= result.name;
-    });
+
 })
 
