@@ -82,22 +82,30 @@ document.addEventListener("DOMContentLoaded", function () {
                 counter++;
 
                 var official
-                if(element.rol == "oficial"){
-                    official ="★";
+                if(element.rol == "player"){
+                    document.getElementById("playerslist").innerHTML += `  <tr>
+                    <th scope="row" id="linea" onclick="showprofile()">${counter}</th>
+                    <td>${element.name}</td>
+                    <td>${element.punishment}</td>
+                    <td>${element.disqualification}</td>
+                    <td>${element.goals}</td>
+                    <td>${element.healtdeadtime}</td>
+                    <td>${buttonWD}</td>
+                  </tr>`;
                 }
                 else {
-                    official=""; 
+                    document.getElementById("playerslist").innerHTML += `  <tr class="bg-secondary ">
+                    <th scope="row" id="linea" onclick="showprofile()">${counter}</th>
+                    <td>${element.name}</td>
+                    <td>${element.punishment}</td>
+                    <td>${element.disqualification}</td>
+                    <td>${element.goals}</td>
+                    <td>${element.healtdeadtime}</td>
+                    <td>${buttonWD}</td>
+                  </tr>`;
                 }
 
-                document.getElementById("playerslist").innerHTML += `  <tr>
-                <th scope="row" id="linea" onclick="showprofile()">${counter}</th>
-                <td>${official} ${element.name}</td>
-                <td>${element.punishment}</td>
-                <td>${element.disqualification}</td>
-                <td>${element.goals}</td>
-                <td>${element.healtdeadtime}</td>
-                <td>${buttonWD}</td>
-              </tr>`;
+               
             });
 
         }
