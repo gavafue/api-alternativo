@@ -80,9 +80,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     buttonWD = " - ";
                 }
                 counter++;
+
+                var official
+                if(element.rol == "oficial"){
+                    official ="★";
+                }
+                else {
+                    official=""; 
+                }
+
                 document.getElementById("playerslist").innerHTML += `  <tr>
                 <th scope="row" id="linea" onclick="showprofile()">${counter}</th>
-                <td>${element.name}</td>
+                <td>${official} ${element.name}</td>
                 <td>${element.punishment}</td>
                 <td>${element.disqualification}</td>
                 <td>${element.goals}</td>
