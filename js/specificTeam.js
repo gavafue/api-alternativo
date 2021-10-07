@@ -1,6 +1,8 @@
+INFORMES_MAY_FEM = "https://gavafue.github.io/api-alternativo/json/informesfemMay.json"
+
 function teaminfo(array) {
-    let contenido = 
-    `
+    let contenido =
+        `
     <div class="container bg-light">
     <div class="row border">
         <h2 class="text-center"> ${array[(localStorage.getItem("team")) - 1].namecomplete}</h2>
@@ -33,49 +35,37 @@ function teaminfo(array) {
     </div>
 
 </div>`;
-document.getElementById("title").innerHTML=` ${array[(localStorage.getItem("team")) - 1].namecomplete}`;
-document.getElementById("teaminfoshowed").innerHTML = contenido;
+    document.getElementById("title").innerHTML = ` ${array[(localStorage.getItem("team")) - 1].namecomplete}`;
+    document.getElementById("teaminfoshowed").innerHTML = contenido;
 
 }
+function buscarinforme(player){
+
+}
+var listainformes
 document.addEventListener("DOMContentLoaded", function () {
+    getJSONData(INFORMES_MAY_FEM).then(function(result){
+        listainformes=result.data;
+    });
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
-  let counter=0
+    let counter = 0
+
 
     getJSONData(PONTEVEDRES_MAY_FEM).then(function (result) {
-        if(localStorage.getItem("team")==1){
+        if (localStorage.getItem("team") == 1) {
             result.data.forEach(element => {
                 var buttonWD
-                if (element.writedreport=="yes") {
-                    buttonWD=`<span class="badge bg-warning text-dark" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Informe escrito: ${element.name}</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>`;
-                    
-                }
-                else{
-                    buttonWD=" - ";
+                if (element.writedreport == "yes") {
+
+                    buttonWD = `<span class="badge bg-warning text-dark" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="buscarinforme(${element.id})">Ver WD</span>`;
+
+                } else {
+                    buttonWD = " - ";
                 }
                 counter++;
-                if (element.rol="player") {
-                    
-                }
-                document.getElementById("playerslist").innerHTML+=`  <tr>
+                document.getElementById("playerslist").innerHTML += `  <tr>
                 <th scope="row" id="linea" onclick="showprofile()">${counter}</th>
                 <td>${element.name}</td>
                 <td>${element.punishment}</td>
@@ -85,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <td>${buttonWD}</td>
               </tr>`;
             });
-           
-        }    
-        });
+
+        }
+    });
+
+  
 })
