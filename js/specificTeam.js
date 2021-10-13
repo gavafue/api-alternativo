@@ -1,3 +1,11 @@
+function searchWD(URL, idjugador){
+    getJSONData(URL).then(function (result) {
+        var datosinforme = result.idjugador.data;
+document.getElementById("exampleModalLabel").innerHTML = "probando";
+    });
+};
+
+
 function teaminfo(array) {
     let contenido =
         `
@@ -53,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var buttonWD
                 if (element.writedreport == "yes") {
 
-                    buttonWD = `<span class="badge bg-warning text-dark" onclick="buscarinforme(${INFORME_MAY_FEM}, ${element.id})" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>
+                    buttonWD = `<span class="badge bg-warning text-dark" onclick="searchWD(${INFORMES_MAY_FEM},${element.id})" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>
                     <!-- Popup Modal -->
 <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -114,10 +122,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })
 
-function buscarinforme(URL, idjugador){
-    getJSONData(URL).then(function (resultobj) {
-        let datosinforme= resultobj.idjugador.data;
-document.getElementById("exampleModalLabel").innerHTML = "probando";
-    });
-};
 
