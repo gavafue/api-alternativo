@@ -106,6 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function searchWD() {
    
-    document.getElementById("wdDescription").innerHTML = datosinformes.name;
+    document.getElementById("wdDescription").innerHTML = datosinformes[0].name;
     
     };
