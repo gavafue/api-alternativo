@@ -1,6 +1,6 @@
 MAYORES_FEMENINO = "https://gavafue.github.io/api-alternativo/json/mayoresfem.json"
 PONTEVEDRES_MAY_FEM = "https://gavafue.github.io/api-alternativo/json/pontevedresmayoresfem.json"
-INFORMES_MAY_FEM = "https://gavafue.github.io/api-alternativo/json/informesfemMay.json"
+INFORME_MAY_FEM = "https://gavafue.github.io/api-alternativo/json/informesfemMay.json"
 var getJSONData = function (url) {
     var result = {};
     return fetch(url)
