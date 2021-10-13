@@ -43,6 +43,13 @@ function teaminfo(array) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+    fetch(INFORMES_MAY_FEM)
+    .then(respuesta => respuesta.json())
+
+    .then(datos => { 
+        datosinformes = datos;
+    });
+
   
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
@@ -96,19 +103,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
     });
-    fetch(INFORMES_MAY_FEM)
-    .then(respuesta => respuesta.json())
-
-    .then(datos => { 
-        datosinformes = datos;
-    });
+  
 
   
 })
 
 
 function searchWD() {
-   
-    document.getElementById("wdDescription").innerHTML = datosinformes.name;
+    document.getElementById("exampleModalLabel").innerHTML = datosinformes.name;
+    document.getElementById("wdDescription").innerHTML = datosinformes.description;
+    document.getElementById("wdReferee").innerHTML = datosinformes.referee;
+    document.getElementById("wdCourt").innerHTML = datosinformes.court;
+    document.getElementById("wdDate").innerHTML = datosinformes.date;
+    document.getElementById("wdEndtime").innerHTML = datosinformes.deadtime;
     
     };
