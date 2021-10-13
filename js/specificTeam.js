@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 
-    getJSONData(INFORMES_MAY_FEM).then(function (result) {
+    getJSONData(PONTEVEDRES_MAY_FEM).then(function (result) {
         datosinformes = result.data;
      });
   
@@ -106,6 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function searchWD() {
    
-    document.getElementById("wdDescription").innerHTML = datosinformes.description;
+    document.getElementById("wdDescription").innerHTML = datosinformes.name;
     
     };
