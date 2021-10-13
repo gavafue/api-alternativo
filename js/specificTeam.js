@@ -1,9 +1,4 @@
-function searchWD(URL, idjugador){
-    getJSONData(URL).then(function (result) {
-        var datosinforme = result.idjugador.data;
-document.getElementById("exampleModalLabel").innerHTML = "probando";
-    });
-};
+
 
 
 function teaminfo(array) {
@@ -46,7 +41,7 @@ function teaminfo(array) {
 
 }
 
-var listainformes
+
 document.addEventListener("DOMContentLoaded", function () {
   
     getJSONData(MAYORES_FEMENINO).then(function (result) {
@@ -119,9 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
         }
+        
     });
 
-
+    function searchWD(URL, idjugador){
+        getJSONData(URL).then(function (result) {
+            var datosinforme = result.idjugador.data;
+    document.getElementById("wdReferee").innerHTML = "probando";
+        });
+    };
 })
 
 
