@@ -52,12 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
-    let counter = 0
+   
 
-
+    let counter = 0;
     getJSONData(PONTEVEDRES_MAY_FEM).then(function (result) {
+        
         if (localStorage.getItem("team") == 1) {
             result.data.forEach(element => {
+               
                 var buttonWD
                 if (element.writedreport == "yes") {
 
