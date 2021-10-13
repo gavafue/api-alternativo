@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .then(datos => { 
         datosinformes = datos;
     });
-    
+
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
@@ -110,6 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function searchWD() {
    
-    document.getElementById("wdDescription").innerHTML = datosinformes.name;
+    document.getElementById("wdDescription").innerHTML = datosinformes.abc.name;
     
     };
