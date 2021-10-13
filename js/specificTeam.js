@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function buscarinforme(URL, idjugador){
     getJSONData(URL).then(function (resultobj) {
         let datosinforme= resultobj.idjugador.data;
-document.getElementById("exampleModalLabel").innerHTML= datosinforme.name;
+document.getElementById("exampleModalLabel").innerHTML = "probando";
     });
 };
 
