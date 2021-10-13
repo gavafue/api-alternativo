@@ -1,4 +1,4 @@
-
+var datosinformes
 
 
 function teaminfo(array) {
@@ -41,12 +41,9 @@ function teaminfo(array) {
 
 }
 
-var datosinformes
+
 document.addEventListener("DOMContentLoaded", function () {
   
-    getJSONData(INFORMES_MAY_FEM).then(function (result) {
-       datosinformes = result.data;
-    });
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
@@ -61,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 var buttonWD
                 if (element.writedreport == "yes") {
 
-                    buttonWD = `<span class="badge bg-warning text-dark" onclick="searchWD(${parseInt(element.id)})" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>
+                    buttonWD = `<span class="badge bg-warning text-dark" onclick="searchWD()" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span>
                    `;
 
                 } else {
@@ -100,12 +97,15 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 
+    getJSONData(INFORMES_MAY_FEM).then(function (result) {
+        datosinformes = result.data;
+     });
   
 })
 
 
-function searchWD(idplayer) {
-   console.log(datosinformes.idplayer.name)
-    document.getElementById("wdDescription").innerHTML = datosinformes.idplayer.name;
+function searchWD() {
+   
+    document.getElementById("wdDescription").innerHTML = datosinformes.description;
     
     };
