@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
     });
 
-    function searchWD(URL, idjugador){
+    function searchWD(URL, parseInt(idjugador)){
         getJSONData(URL).then(function (result) {
             var datosinforme = result.idjugador.data;
     document.getElementById("wdReferee").innerHTML = "probando";
