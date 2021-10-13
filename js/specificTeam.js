@@ -43,13 +43,7 @@ function teaminfo(array) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch(INFORMES_MAY_FEM)
-    .then(respuesta => respuesta.json())
-
-    .then(datos => { 
-        datosinformes = datos;
-    });
-
+  
     getJSONData(MAYORES_FEMENINO).then(function (result) {
         teaminfo(result.data)
     });
@@ -102,7 +96,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
     });
-   
+    fetch(INFORMES_MAY_FEM)
+    .then(respuesta => respuesta.json())
+
+    .then(datos => { 
+        datosinformes = datos;
+    });
 
   
 })
