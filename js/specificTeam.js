@@ -144,3 +144,4 @@ function searchWD() {
     document.getElementById("wdEndtime").innerHTML = datosinformes.deadtime;
     
     };
+
