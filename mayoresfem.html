@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,36 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>  
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <a href="#" class="navbar-brand"><img class="d-inline-block " src="img/logofuh.png"
-                    alt="Logo Federación Uruguaya de Handball" width="50"> Smart Referee</a>
-    
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
-                aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center">
-                    <li><a href="/indice.html" class="nav-link">Inicio</a></li>
-                    <li><a href="#" class="nav-link">Arbitros</a></li>
-                    <li><a href="#" class="nav-link">Tablas y posiciones 3</a></li>
-                    <li><a href="#" class="nav-link">Contacto</a></li>
-                </ul>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <a href="#" class="navbar-brand"><img class="d-inline-block " src="img/logofuh.png"
+                alt="Logo Federación Uruguaya de Handball" width="50"> Smart Referee</a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+            <ul class="navbar-nav ms-auto text-center">
+                <li><a href="/indice.html" class="nav-link">Inicio</a></li>
+                <li><a href="#" class="nav-link">Arbitros</a></li>
+                <li><a href="#" class="nav-link">Tablas y posiciones 3</a></li>
+                <li><a href="#" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--Contenido-->
+    <div class="container bg-light bg-gradient border">
+        <div class="listado">
+            <h1 class="display-2" style="text-align:center;">Equipos de Liga Mayor Femenina</h1>
+            <div class="container">
+                <div id="mayoresFemenino" class="bg-light.bg-gradient row"></div>
             </div>
-        </nav>
-        <!--Contenido-->
-    <div class="listado">
-    <h1 class="display-2" style="text-align:center;">Equipos de Liga Mayor Femenina</h1>
-   <div class="container"> <div id="mayoresFemenino" class="bg-light.bg-gradient row"></div></div></div>
-   </body>
+        </div>
+    </div>
+</body>
+
 </html>
 <script src="js/init.js"></script>
 <script src="js/TeamLists.js"></script>

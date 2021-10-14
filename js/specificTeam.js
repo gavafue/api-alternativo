@@ -103,6 +103,32 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         
     });
+
+    if (localStorage.getItem("team") != 1) {
+        function repeatStringNumTimes(string, times) {
+            var repeatedString = "";
+            while (times > 0) {
+              repeatedString += string;
+              times--;
+            }
+            return repeatedString;
+          }
+
+          let fila = `  <tr>
+          <th scope="row" id="linea" onclick="showprofile()"></th>
+          <td>Nombre de la jugadora</td>
+          <td>2min</td>
+          <td>Rcard</td>
+          <td>Goles</td>
+          <td>C.salud</td>
+          <td><span class="badge bg-warning text-dark" onclick="searchWD()" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver WD</span></td>
+        </tr>`;
+       
+          document.getElementById("playerslist").innerHTML = repeatStringNumTimes(fila,10);
+
+        
+          
+          }
   
 
   
